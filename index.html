@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>4
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">4
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
@@ -113,8 +114,11 @@
       <div class="column-one">
   
         <div class="circle-one"></div>
-    
-          <h2>PYTHON</h2>
+     
+          <!-- <h2>PYTHON</h2> -->
+		  <h2>
+		  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#PythonSignUp">PYTHON</button>
+		  </h2>
           <p>Whether parsing a text file, or using one of the amazing libraries, Python is King when it comes to collecting weather data.</p>
     
       </div>
@@ -123,7 +127,9 @@
   
         <div class="circle-two"></div>
     
-          <h2>PHP</h2>
+          <!--<h2>PHP</h2> -->
+		  <h2>
+		  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PHPSignUp">PHP</button><h2>
           <p>When it comes to webpages and weather, there is a lot of data that gets passed around.  PHP is up for the job!</p>
     
       </div>
@@ -133,7 +139,9 @@
   
         <div class="circle-three"></div>
     
-        <h2>MYSQL</h2>
+        <!--<h2>MYSQL</h2> -->
+		<h2>
+		<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#MYSQLSignUp">MYSQL</button><h2>
         <p>What is simple to learn, can handle all the basic database operations, and is also free? It's MySQL!</p>
     
     </div>  
@@ -229,6 +237,97 @@
     </section>
 
 
+	
+	
+	
+	<div class="modal fade" id="PythonSignUp">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Want to see my Python work? Join my email list.</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				 </div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		
+		<div class="modal fade" id="PHPSignUp">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Want to see my PHP work? Join my email list.</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				 </div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="modal fade" id="MYSQLSignUp">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Want to see my MySQL work? Join my email list.</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				 </div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     <section class="footer">
       
         <div class="logo"><img src="img/logo-footer.png"></div>
@@ -256,6 +355,13 @@
 
 	<!-- Scripts -->
 	
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	
+	
+	
 	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
 	<script src="js/jquery-ui-1.10.4.min.js" type="text/javascript"></script> <!-- jQuery -->
 	<script src="js/jquery.nicescroll.js"></script> <!-- jQuery NiceScroll -->
@@ -279,7 +385,15 @@
 	<script src="js/jquery.parallax.js"></script> <!-- jQuery Parallax -->	
 	<script src="js/script.js"></script> <!-- All script -->	
 
-
+<script>
+		$('.popover-dismiss').popover({
+		trigger: 'focus'
+		})
+	</script>
+	
+	
+	
 </body>
 
 </html>
+
